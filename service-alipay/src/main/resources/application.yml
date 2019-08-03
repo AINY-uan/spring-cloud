@@ -1,0 +1,25 @@
+server:
+  port: 10002
+
+spring:
+  application:
+    name: service-alipay
+  profiles:
+    include: db
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10000/eureka/
+
+logging:
+  pattern:
+    console: '[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%.-1level] [%thread] [%logger{1}] %msg%n%throwable{5}'
+    file: '[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%.-1level] [%thread] [%logger{1}] %msg%n%throwable{5}'
+  level:
+    root: info
+    com: error
+    org:
+      ainy: debug
+      apache: error
+      springframework: error

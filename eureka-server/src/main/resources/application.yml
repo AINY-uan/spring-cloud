@@ -1,0 +1,30 @@
+server:
+  port: 10000
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    #表示是否将自己注册在EurekaServer上，默认为true
+    register-with-eureka: false
+    #表示是否将自己注册在EurekaServer上，默认为true
+    fetch-registry: false
+    service-url:
+      #设置Eureka的地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+logging:
+  pattern:
+    console: '[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%.-1level] [%thread] [%logger{1}] %msg%n%throwable{5}'
+    file: '[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%.-1level] [%thread] [%logger{1}] %msg%n%throwable{5}'
+  level:
+    root: info
+    com: error
+    org:
+      ainy: info
+      apache: error
+      springframework: error

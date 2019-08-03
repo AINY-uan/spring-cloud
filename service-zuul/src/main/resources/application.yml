@@ -1,0 +1,31 @@
+server:
+  port: 10001
+
+spring:
+  application:
+    name: service-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10000/eureka/
+zuul:
+  routes:
+    alipay:
+      path: /alipay/**
+      serviceId: service-alipay
+    wechat:
+      path: /wechat/**
+      serviceId: service-wechat
+
+logging:
+  pattern:
+    console: '[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%.-1level] [%thread] [%logger{1}] %msg%n%throwable{5}'
+    file: '[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%.-1level] [%thread] [%logger{1}] %msg%n%throwable{5}'
+  level:
+    root: info
+    com: error
+    org:
+      ainy: info
+      apache: error
+      springframework: error

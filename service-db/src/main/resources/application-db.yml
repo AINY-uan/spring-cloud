@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    username: postgres
+    password: YQJ6MOnXO6+7MSw2skTzujcyjwPOI7C7xHfwECwTthRD2Rtz7eHLdzMlb45skUtz1jFNLgmQNJhOkEBfVoNPx/5IL5oCTzbjVUxmLbXGVNHcvnJwUyOIrcRMVmyibyeGZ4xVWuqBrr+8CNrB7QRX0R+xX+MuU3BFKEI+J6ulZtM=
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    type: com.alibaba.druid.pool.DruidDataSource
+    publickey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCKng0hjX8aJqMcZsYBDNDHay02Tp3z0b0bpjSmqKXtrU1sBc4ChUxrRsEIDtLFXdbhUQJQAy7SZFbuD/Ale3XNrI+m2zdFAZALNRUzPc/kMUC7Hcefn/1HULvtLo+3tBO0P5d63aa10F+redKNGMGGJw4Xwhw06Axpn/RqpOuVsQIDAQAB
+    druid:
+      filter:
+        config:
+          enabled: true
+      connection-properties: config.decrypt=true;config.decrypt.key=${spring.datasource.publickey}
+#      最大连接数
+      max-active: 20
+#      初始化连接数
+      initial-size: 1
+#      最小连接数
+      min-idle: 1
+#      最大等待时间
+      max-wait: 6000
+
+#开启驼峰命名
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
