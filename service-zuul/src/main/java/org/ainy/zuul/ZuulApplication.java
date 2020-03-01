@@ -7,9 +7,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * @Author: yuandong
- * @Description: Zuul启动类
- * @Date: 2019-08-01 15:47
+ * @author AINY
+ * @description Zuul启动类
+ * @date 2019-08-01 15:47
  */
 @SpringBootApplication
 @EnableZuulProxy

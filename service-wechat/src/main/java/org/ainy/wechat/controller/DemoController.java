@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author: yuandong
- * @Description: Demo
- * @Date: 2019-08-01 16:40
+ * @author AINY
+ * @description Demo
+ * @date 2019-08-01 16:40
  */
 @RestController
 @RequestMapping

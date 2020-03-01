@@ -7,9 +7,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * @Author: yuandong
- * @Description: Alipay服务启动类
- * @Date: 2019-08-01 16:30
+ * @author AINY
+ * @description Alipay服务启动类
+ * @date 2019-08-01 16:30
  */
 @SpringBootApplication
 @EnableEurekaClient

@@ -15,9 +15,9 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 /**
- * @Author: YUANDONG
- * @Description: RSA加密解密
- * @Date: 2019-08-01 17:26
+ * @author AINY
+ * @description RSA加密解密
+ * @date 2019-08-01 17:26
  */
 public class RsaUtil {
 
@@ -126,7 +126,7 @@ public class RsaUtil {
         try {
             BufferedReader br = new BufferedReader(new FileReader(path
                     + "/privateKey.keystore"));
-            String readLine = null;
+            String readLine;
             StringBuilder sb = new StringBuilder();
             while ((readLine = br.readLine()) != null) {
                 sb.append(readLine);

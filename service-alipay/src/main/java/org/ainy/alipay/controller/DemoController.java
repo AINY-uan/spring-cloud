@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @Author: yuandong
- * @Description: Demo
- * @Date: 2019-08-01 16:32
+ * @author AINY
+ * @description Demo
+ * @date 2019-08-01 16:32
  */
 @Slf4j
 @RestController

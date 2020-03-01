@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @Author: YUANDONG
- * @Description: 推送类型服务
- * @Date: 2019-08-02 13:46
+ * @author AINY
+ * @description 推送类型服务
+ * @date 2019-08-02 13:46
  */
 @Service
 public class StudentService {

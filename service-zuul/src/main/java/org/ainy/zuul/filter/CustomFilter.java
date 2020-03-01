@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Author: yuandong
- * @Description: 过滤器
- * @Date: 2019-08-01 15:58
+ * @author AINY
+ * @description 过滤器
+ * @date 2019-08-01 15:58
  */
 @Slf4j
 @Component
